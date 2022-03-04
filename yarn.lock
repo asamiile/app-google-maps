@@ -5598,10 +5598,10 @@ globjoin@^0.1.4:
   resolved "https://registry.yarnpkg.com/globjoin/-/globjoin-0.1.4.tgz#2f4494ac8919e3767c5cbb691e9f463324285d43"
   integrity sha1-L0SUrIkZ43Z8XLtpHp9GMyQoXUM=
 
-gmap-vue@^3.4.5:
-  version "3.4.5"
-  resolved "https://registry.yarnpkg.com/gmap-vue/-/gmap-vue-3.4.5.tgz#9962805aa089baf8be730bdc4d76a23f0df0219a"
-  integrity sha512-P21amhQyRtuEiE72B/GYnBOkOqh41/KCREOlIush7nhzKrHlY+UfwX3B2n3EGt3BmePubg2Rs7txGpk65VrP/g==
+gmap-vue@^3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/gmap-vue/-/gmap-vue-3.5.1.tgz#aadd51bc255e32e0a7c9f3ce8ae01689e087cb42"
+  integrity sha512-IS+qOo64kBnooCxlay+VyvWuyqw8jsp7DCH4xTtRqqCXljJxhRPk0KNyjYY+rdR6WfYznP1ytBSo1l+joq4Cgw==
   dependencies:
     "@googlemaps/markerclusterer" "^1.0.13"
     core-js "^3.19.1"
