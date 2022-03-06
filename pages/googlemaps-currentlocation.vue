@@ -1,10 +1,10 @@
 <template lang="pug">
   div
-    GoogleMapCurrentLocation  
+    GoogleMapsCurrentlocation  
 </template>
 
 <script>
 export default {
-  name: 'currentLocation',
+  name: 'GooglemapsCurrentlocation',
 }
 </script>
