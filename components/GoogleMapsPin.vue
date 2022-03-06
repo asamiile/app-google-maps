@@ -1,5 +1,6 @@
 <template lang="pug">
-  //- ピンを表示
+  //- Show pins and info windows
+  //- ピンとインフォウィンドウを表示
   GmapMap(
     ref="gmap"
     map-type-id="terrain"

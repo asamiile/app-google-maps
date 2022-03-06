@@ -1,4 +1,6 @@
 <template lang="pug">
+  //- Show map
+  //- 地図を表示
   GmapMap(
     :center="center"
     :zoom="zoom"

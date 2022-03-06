@@ -1,4 +1,5 @@
 <template lang="pug">
+  //- Get your current location and display a map
   //- 現在地を取得して地図を表示
   GmapMap(
     :center="center"
