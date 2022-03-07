@@ -1,26 +1,23 @@
-<template>
-  <v-app dark>
-    <v-app-bar :clipped-left="clipped" fixed app>
-      <v-toolbar-title>app-google-map</v-toolbar-title>
-      <v-spacer />
-      <v-btn icon @click.stop="rightDrawer = !rightDrawer">
-        <v-icon>mdi-menu</v-icon>
-      </v-btn>
-    </v-app-bar>
-    <v-main>
-      <Nuxt />
-    </v-main>
-    <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
-      <v-list>
-        <v-list-item @click.native="right = !right">
-          <v-list-item-action>
-            <v-icon light> mdi-repeat </v-icon>
-          </v-list-item-action>
-          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-  </v-app>
+<template lang="pug">
+  v-app(dark)
+    v-app-bar(:clipped-left='clipped' color='#fff' fixed flat app)
+      v-toolbar-title
+        nuxt-link(to='/')
+          | app-google-map
+      v-spacer
+      v-btn(icon, @click.stop='rightDrawer = !rightDrawer')
+        v-icon(color='#29282d')
+          | mdi-menu
+    v-main
+      Nuxt
+    v-navigation-drawer(v-model='rightDrawer' :right='right' color='#f0ede9' temporary fixed)
+      v-list
+        v-list-item(to='/', color='#29282d')
+          | basic
+        v-list-item(to='googlemaps-currentlocation', color='#29282d') 
+          | current location
+        v-list-item(to='googlemaps-pin', color='#29282d')
+          | pin and info window
 </template>
 
 <script>
@@ -29,7 +26,6 @@ export default {
   data() {
     return {
       clipped: false,
-      drawer: false,
       fixed: false,
       right: true,
       rightDrawer: false,
@@ -37,3 +33,14 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.nuxt-link-active {
+  text-decoration: none;
+  color: #29282d;
+}
+
+.theme--dark.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled) {
+  color: #29282d;
+}
+</style>

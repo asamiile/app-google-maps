@@ -1,9 +1,9 @@
 import { mount } from '@vue/test-utils'
-import NuxtLogo from '@/components/NuxtLogo.vue'
+import GoogleMaps from '@/components/GoogleMaps.vue'
 
-describe('NuxtLogo', () => {
+describe('GoogleMaps', () => {
   test('is a Vue instance', () => {
-    const wrapper = mount(NuxtLogo)
+    const wrapper = mount(GoogleMaps)
     expect(wrapper.vm).toBeTruthy()
   })
 })
